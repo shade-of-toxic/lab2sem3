@@ -11,7 +11,7 @@ void seta(Cardioid &card)
   std::cout << "Input a>>";
   double a;
   std::cin >> a;
-  card.setA(a);
+  std::cout << "\n" << "A set to " << card.setA(a);
 }
 
 void geta(Cardioid &card)
@@ -59,7 +59,7 @@ int main()
   Cardioid cardioid{0};
   while (1)
   {
-    std::cout << "Choose... \n\
+    std::cout << "Ask... \n\
     [0]Exit\n\
     [1]Set 'a'\n\
     [2]Get 'a'\n\
