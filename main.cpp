@@ -8,10 +8,19 @@ void exit(Cardioid &card)
 
 void seta(Cardioid &card)
 {
-  std::cout << "Input a>>";
-  double a;
-  std::cin >> a;
-  std::cout << "\n" << "A set to " << card.setA(a);
+std::cout « "Input a»";
+double a;
+std::cin » a;
+try
+{
+auto valset = card.setA(a);
+std::cout « "\nA set to " « valset;
+}
+catch (std::runtime_error &e)
+{
+std::cout « "\nParam not set!\n"
+« e.what() « std::endl;
+}
 }
 
 void geta(Cardioid &card)
